@@ -1,0 +1,83 @@
+.title{
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.login-button {
+  display: inline-block;
+  background-color: transparent;              /* Trasparente */
+  color: #0071e3;                              /* Blu Apple */
+  border: 1px solid #0071e3;                  /* Bordo sottile blu */
+  border-radius: 12px;                        /* Arrotondato come bottone */
+  padding: 10px 20px;                         /* Spazio interno */
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;                      /* No sottolineatura */
+  transition: all 0.3s ease;
+  position: absolute;
+  right: 2rem;
+  top: 2.5rem;
+}
+
+.login-button:hover {
+  background-color: #0071e3;                  /* Riempie di blu al hover */
+  color: #ffffff;                             /* Testo diventa bianco */
+}
+.title h1{
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -0.02em;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.cardWrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.first{
+  flex-direction: column;
+}
+
+.card button{
+  margin: 1rem;
+  background-color: #0071e3; /* Blu Apple classico */
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 12px; /* Angoli morbidi come i pulsanti Apple */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Animazione fluida */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Ombra leggera */
+}
+
+.card button:hover{
+  background-color: #0062c7; /* Leggermente più scuro */
+  transform: translateY(-2px); /* Piccolo “lift” */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

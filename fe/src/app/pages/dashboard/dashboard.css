@@ -1,0 +1,31 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Gradiente soft */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.title {
+  color: #1d1d1f;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.scannContainer {
+  width: 100%;
+  max-width: 900px; /* Non troppo largo su desktop */
+}
+
+app-scan-page {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}

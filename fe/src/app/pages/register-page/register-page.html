@@ -1,0 +1,54 @@
+<div class="register-container">
+  <div class="register-card">
+    <h1>Registrati</h1>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Inserisci il tuo nome"
+          class="form-input"
+          formControlName="name"
+
+        />
+        <input type="text"
+               name="lastname"
+               id="lastname"
+               placeholder="Inserisci il cognome"
+               class="form-input"
+               formControlName="lastname"
+        />
+        <input type="email"
+               name="email"
+               id="email"
+               placeholder="Inserisci la tua email"
+               class="form-input"
+               formControlName="email"
+        />
+        <input type="password"
+               name="password"
+               id="password"
+               placeholder="Inserisci la password"
+               class="form-input"
+               formControlName="password"
+        />
+        <input type="password"
+               name="confirmPassword"
+               id="confirmPassword"
+               placeholder="Reinserisci la password"
+               class="form-input"
+               formControlName="confirmPassword"
+        />
+      </div>
+
+      <!-- Qui aggiungerai tu email, password, ecc. -->
+
+      <button type="submit" class="apple-button">Registrati</button>
+    </form>
+
+    <p class="login-link">
+      Hai già un account? <a routerLink="/login" class="login-button">Login</a>
+    </p>
+  </div>
+</div>

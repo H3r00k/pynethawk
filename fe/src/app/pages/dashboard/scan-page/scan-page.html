@@ -1,0 +1,33 @@
+<div class="scan-container">
+  <button class="apple-button" (click)="startScan()" [disabled]="isScanning">
+    {{ isScanning ? 'Scanning...' : 'Avvia Scan' }}
+  </button>
+
+  @if (isScanning) {
+    <div class="loading">Caricamento...</div>
+  }
+  <p>Debug: devices.length = {{ devices.length }}</p>
+
+  @if (devices.length > 0) {
+    <table>
+      <thead>
+        <tr>
+          <th>IP</th>
+          <th>MAC</th>
+          <th>Hostname</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (device of devices; track device.ip) {
+          <tr>
+            <td>{{ device.ip }}</td>
+            <td>{{ device.mac }}</td>
+            <td>{{ device.hostname }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  } @else if (!isScanning) {
+    <p>Nessun dispositivo trovato o non ancora scansionato.</p>
+  }
+</div>

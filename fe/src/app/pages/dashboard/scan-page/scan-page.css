@@ -1,0 +1,62 @@
+.scan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.apple-button {
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 113, 227, 0.3);
+}
+
+.apple-button:hover:not(:disabled) {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+}
+
+.apple-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: #0071e3;
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+  background-color: rgba(0, 113, 227, 0.2);
+  color: #1d1d1f;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}

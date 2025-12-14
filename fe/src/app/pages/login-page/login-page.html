@@ -1,0 +1,32 @@
+<div class="register-container">
+  <div class="register-card">
+    <h1>Login</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+
+        <input type="email"
+               name="email"
+               id="email"
+               placeholder="Inserisci la tua email"
+               class="form-input"
+               formControlName="email"
+        />
+        <input type="password"
+               name="password"
+               id="password"
+               placeholder="Inserisci la password"
+               class="form-input"
+               formControlName="password"
+        />
+
+      </div>
+
+
+      <button type="submit" class="apple-button">Login</button>
+    </form>
+
+    <p class="login-link">
+      Non hai un account?? <a routerLink="/login" class="login-button">Registrati</a>
+    </p>
+  </div>
+</div>
