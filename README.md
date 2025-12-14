@@ -1,4 +1,12 @@
+
+## Avviso
+Questo tool è progettato solo per uso su reti private di proprietà dell'utente.  
+Non utilizzare su reti altrui senza autorizzazione esplicita (può violare leggi).
+
 Scanner LAN locale fullstack.
+
+
+------------------------------------------------------------------------------
 
 ## Descrizione
 Tool per scoprire dispositivi sulla rete WiFi di casa (IP, MAC, hostname).  
